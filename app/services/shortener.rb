@@ -5,7 +5,7 @@ class Shortener
   end
 
   def lookup_code
-
+    "1234567"
   end
 
 end
