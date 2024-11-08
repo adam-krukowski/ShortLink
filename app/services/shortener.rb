@@ -4,4 +4,8 @@ class Shortener
 
   end
 
+  def lookup_code
+
+  end
+
 end
