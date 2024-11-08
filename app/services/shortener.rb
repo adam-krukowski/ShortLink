@@ -5,7 +5,11 @@ class Shortener
   end
 
   def lookup_code
-    "1234567"
+  string = ""
+  7.times do |n|
+    string << (rand * n).round
+  end
+  string
   end
 
 end
