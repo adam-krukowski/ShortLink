@@ -37,6 +37,10 @@ it "generates a Link record with a unique lookup code" do
   shortener = Shortener.new(url)
   link = shortener.generate_short_link
   expect(link.valid?).to be(true)
+
+  link2 = shortener.generate_short_link
+  expect(link2.valid?).to be(true)
+
 end
 
 end
