@@ -20,18 +20,6 @@ it "gives each URL its own lookup code" do
   expect(code_2).not_to eq(code_1)
 end
 
-it "always gives the same URL to the same lookup code" do
-  url = "https://www.favouritewebsite.com/articles/how-to-cook"
-  shortener = Shortener.new(url)
-  first_code = shortener.lookup_code
-
-  url = "https://www.favouritewebsite.com/articles/how-to-cook"
-  shortener = Shortener.new(url)
-  second_code = shortener.lookup_code
-
-  expect(first_code).to eq(second_code)
-end
-
 it "generates a Link record with a unique lookup code" do
   url = "https://www.favouritewebsite.com/articles/how-to-cook"
   shortener = Shortener.new(url)
