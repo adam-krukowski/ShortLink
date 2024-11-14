@@ -20,6 +20,8 @@ attr_reader :url, :link_model
     link_model.create!(original_url: url, lookup_code: lookup_code)
   end
 
+  private
+
   def get_fresh_code(i)
     Digest::SHA256.hexdigest(url)[i..(i + 6)]
   end
