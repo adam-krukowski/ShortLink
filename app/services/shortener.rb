@@ -23,6 +23,6 @@ attr_reader :url, :link_model
   private
 
   def get_fresh_code(i)
-    Digest::SHA256.hexdigest(url)[i..(i + 6)]
+    SecureRandom.uuid[0..6]
   end
 end
