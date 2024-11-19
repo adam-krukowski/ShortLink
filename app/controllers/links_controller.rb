@@ -1,2 +1,6 @@
-class LinkController < ApplicationController
+class LinksController < ApplicationController
+
+  def create
+
+  end
 end
